@@ -36,7 +36,6 @@ export const Header = () => {
                 </div>
 
                 <div className="flex flex-row items-center">
-                    <div className="mr-1"><Link href="/manifesto">Manifesto</Link></div>
                     {isAuthenticated ? (
                         <>
                             <button

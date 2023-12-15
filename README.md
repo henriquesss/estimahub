@@ -1,4 +1,9 @@
 # Project Documentation: estimahub
+
+<p align="center">
+   <img loading="lazy" width="550px" src="./estimahub-cover.jpeg" alt="estima_hub_cover" />
+</p>
+
 ## Overview
 
 This project is built using Next.js, a React framework for building server-rendered applications, and follows a serverless architecture utilizing Firebase services. The combination of Next.js and Firebase provides a scalable and efficient solution for developing web applications with dynamic content and serverless functions.

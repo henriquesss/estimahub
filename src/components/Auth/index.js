@@ -12,25 +12,39 @@ export const Auth = ({ type }) => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [errors, setErrors] = useState({
+        email: '',
+        password: ''
+    });
 
     const router = useRouter();
 
     const handleAuth = async () => {
         try {
-            const usersCollectionRef = collection(db, "users");
+            // Validate form fields
+            const newErrors = {};
+            if (!email) newErrors.email = 'Preencha o email';
 
-            if(type == 'signin') await signIn(email, password);
+            if (!password) newErrors.password = 'Preencha a senha';
+
+            // If there are errors, set them in the state
+            if (Object.keys(newErrors).length > 0) setErrors(newErrors);
             else {
-                const createdFirebaseAuth = await createUserWithEmailAndPassword(auth, email, password)
-                const createdDatabaseUser = await addDoc(usersCollectionRef, {
-                    email,
-                    firebase_uid: createdFirebaseAuth.user.uid,
-                    createdAt: new Date()
-                })
-            }
-            
+                // Everything is ok
+                const usersCollectionRef = collection(db, "users");
 
-            router.push('/');
+                if(type == 'signin') await signIn(email, password);
+                else {
+                    const createdFirebaseAuth = await createUserWithEmailAndPassword(auth, email, password)
+                    const createdDatabaseUser = await addDoc(usersCollectionRef, {
+                        email,
+                        firebase_uid: createdFirebaseAuth.user.uid,
+                        createdAt: new Date()
+                    })
+                }
+                
+                router.push('/');
+            }
         } catch (error) {
             console.error(error)
         }
@@ -38,12 +52,14 @@ export const Auth = ({ type }) => {
 
     return (
         <div className="flex flex-col flex-wrap">
+            {errors.email && ( <p className='text-red-500'>{errors.email}</p>)}
             <input
                 type="text"
                 placeholder="Email"
                 onChange={event => setEmail(event.target.value)}
             />
 
+            {errors.password && (<p className='text-red-500'>{errors.password}</p>)}
             <input
                 type="password"
                 placeholder="Senha"

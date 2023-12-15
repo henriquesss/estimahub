@@ -28,7 +28,7 @@ export default function Home() {
           </section>
 
           <section>
-            {/* <Estimatives limit={9}/> */}
+            <Estimatives limit={9}/>
             <Button onClick={() => { router.push('/all')}}>Veja mais</Button>
           </section>
         </div>

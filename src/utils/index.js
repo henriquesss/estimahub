@@ -1,7 +1,7 @@
 module.exports = {
     formatUnixDateString(unixString) {
         // Your Unix timestamp in milliseconds
-        let timestamp = unixString;
+        let timestamp = parseInt(unixString);
 
         // Create a new Date object and pass the timestamp as an argument
         let date = new Date(timestamp);
