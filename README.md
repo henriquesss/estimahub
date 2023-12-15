@@ -1,7 +1,7 @@
 # Project Documentation: estimahub
 
 <p align="center">
-   <img loading="lazy" width="550px" src="./estimahub-cover.jpeg" alt="estima_hub_cover" />
+   <img loading="lazy" width="700px" src="./public/estimahub-cover.jpeg" alt="estima_hub_cover" />
 </p>
 
 ## Overview
