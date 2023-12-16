@@ -32,7 +32,7 @@ export default function AccountPage() {
         }
 
         getEstimatives();
-    }, [reloadData])
+    }, [reloadData, user])
 
     const handleDelete = async (estimativeId) => {
         try {

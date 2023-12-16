@@ -29,7 +29,7 @@ export const Estimatives = ({ limitParam }) => {
         }
 
         getEstimatives();
-    },[estimativesCollectionRef])
+    })
 
     return (
         <div className='container mx-auto mb-10'>

@@ -22,7 +22,7 @@ export function AuthProvider({ children }) {
             setUser(null);
             router.push('/');
         }
-    }, [])
+    }, [router])
 
     onAuthStateChanged(auth, currentUser => {
         setUser(currentUser)
