@@ -2,7 +2,7 @@
 
 import { createContext, useEffect, useState } from "react";
 
-import { db, auth } from '../config/firebase';
+import { auth } from '../config/firebase';
 import { signInWithEmailAndPassword, setPersistence, browserLocalPersistence, signOut, onAuthStateChanged } from 'firebase/auth';
 import { useRouter } from 'next/navigation'
 
@@ -22,7 +22,7 @@ export function AuthProvider({ children }) {
             setUser(null);
             router.push('/');
         }
-    }, [router])
+    }, [])
 
     onAuthStateChanged(auth, currentUser => {
         setUser(currentUser)
