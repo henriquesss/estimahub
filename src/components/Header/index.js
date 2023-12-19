@@ -32,7 +32,7 @@ export const Header = () => {
             />
             <div className="flex justify-around items-center">
                 <div>
-                    <Link href="/">estimahub</Link>
+                    <Link href="/">/estimahub</Link>
                 </div>
 
                 <div className="flex flex-row items-center">

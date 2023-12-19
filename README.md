@@ -40,8 +40,8 @@ First of all, create and account at Firebase (if you don't have), create a proje
 ### Clone the repository and setup enviroment:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
-   cd your-project
+   git clone https://github.com/henriquesss/estimahub
+   cd estimahub
    nvm use (to align your node version)
    npm install 
 ```
@@ -50,4 +50,4 @@ First of all, create and account at Firebase (if you don't have), create a proje
 Be free to send PR with the github pattern. 
 
 ### License
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
