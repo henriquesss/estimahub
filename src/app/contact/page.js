@@ -6,10 +6,9 @@ export default function ContactPage() {
             <Header />
             <article>
                 <div className="container mx-auto py-5">
-                    <p className="text-xl">Contato</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
+                    <p className="text-2xl mb-2 font-bold">Contato</p>
+                    <p className="mb-4">Caso queira falar sobre alguma dúvida, sugestão, reclamação, problema de segurança ou qualquer outro assunto, pode enviar um email diretamente para:</p>
+                    <p>henriques.pessoal@gmail.com</p>
                 </div>
             </article>
 

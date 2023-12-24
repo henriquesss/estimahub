@@ -6,10 +6,14 @@ export default function StatusPage() {
             <Header />
             <article>
                 <div className="container mx-auto py-5">
-                    <p className="text-xl">Status da plataforma</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis quam, maxime labore nesciunt dolores rem culpa cupiditate illo quo dolor reiciendis itaque quas aspernatur necessitatibus commodi deleniti eum hic.</p>
+                    <h1 className="text-2xl">Status da plataforma</h1>
+                    <p>Em breve:</p>
+                    <p>Quantidade total de usuários</p>
+                    <p>Quantidade total de estimativas</p>
+                    <p>Quantidade total de estimativas assertivas</p>
+                    <p>Dados do db da firebase e seu status</p>
+                    <p>Dados do servidor web da Vercel e seu status</p>
+                    <p>Lista de contribuidores</p>
                 </div>
             </article>
 

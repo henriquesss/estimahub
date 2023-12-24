@@ -12,8 +12,7 @@ export const Footer = () => {
                     <Link className="underline" href="/terms-of-use">Termos de uso</Link>
                 </div>
                 <p className='text-sm'>
-                    Desenvolvido com muito ☕ por
-                    <a className="ml-1 underline" target="_blank" href="https://github.com/henriquesss">Lucas Henriques</a> 
+                    Todos direitos reservados. Estimahub.
                 </p>
             </div>
         </div>
