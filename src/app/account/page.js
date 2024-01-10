@@ -49,25 +49,25 @@ export default function AccountPage() {
             <section>
                 <div className='container mx-auto py-5'>
                     <div className='flex flex-col items-center justify-center h-[400px]'>
-                        <p className='text-2xl font-bold mb-5'>Conta</p>
+                        <p className='text-2xl font-bold mb-5'>Account</p>
                         <div className='flex flex-col items-center mb-10'>
                             {user ? (
                                 <>
                                     <p className='text-xl font-bold mr-2'>{user.email}</p>
-                                    <p className='text-gray-700'>membro desde {formatUnixDateString(user.metadata.createdAt)}</p>
+                                    <p className='text-gray-700'>member since {formatUnixDateString(user.metadata.createdAt)}</p>
                                 </>
                             ) : (
-                                <p>Carregando...</p>
+                                <p>Loading...</p>
                             )}
                         </div>
-                        <p className='font-bold mb-5'>Suas estimativas até agora</p>
+                        <p className='font-bold mb-5'>Your estimates until now</p>
 
                         <div class="relative overflow-x-auto w-full">
                             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                     <tr>
                                         <th scope="col" class="px-6 py-3">
-                                            Descrição
+                                            Description
                                         </th>
                                         <th scope="col" class="px-6 py-3">
                                             Stack
@@ -76,10 +76,10 @@ export default function AccountPage() {
                                             Devs
                                         </th>
                                         <th scope="col" class="px-6 py-3">
-                                            Tempo
+                                            Time
                                         </th>
                                         <th scope="col" class="px-6 py-3">
-                                            Ações
+                                            Actions
                                         </th>
                                     </tr>
                                 </thead>
@@ -97,14 +97,14 @@ export default function AccountPage() {
                                                     {estimative.devs}
                                                 </td>
                                                 <td class="px-6 py-4">
-                                                    {estimative.time} (dias)
+                                                    {estimative.time} (days)
                                                 </td>
                                                 <td class="px-6 py-4">
                                                    <button
                                                     className='text-red-500'
                                                     onClick={() => handleDelete(estimative.id)}
                                                    >
-                                                    Excluir
+                                                    Delete
                                                   </button>
                                                 </td>
                                             </tr>
@@ -115,7 +115,7 @@ export default function AccountPage() {
                         </div>
 
                         {userEstimatives.length == 0 && (
-                            <p className='mt-4'>Parece que você não postou nenhuma estimativa por enquanto</p>
+                            <p className='mt-4'>It looks like you haven't posted any estimates yet</p>
                         )}
                         
                     </div>

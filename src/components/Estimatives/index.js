@@ -34,11 +34,11 @@ export const Estimatives = ({ limitParam }) => {
     return (
         <div className='container mx-auto mb-10'>
             {isLoading && (
-                <p>Carregando...</p>
+                <p>Loading...</p>
             )}
 
             {estimatives.length === 0 && !isLoading && (
-                <p>Sem estimativas por enquanto :/</p>
+                <p>Without estimates for now :/</p>
             )}
 
             <div className='flex flex-wrap justify-around'>
@@ -57,6 +57,22 @@ export const Estimatives = ({ limitParam }) => {
             </div>
 
             
+            {/*
+                // Mockup to not use all the limit of Firebase requests
+
+                <div className='flex flex-wrap justify-around'>
+                <>
+                    <div className='md:w-80 w-full mb-4' key={1}>
+                        <EstimativeCard
+                            description="Descrição teste"
+                            stack="teste, teste, teste"
+                            devs={3}
+                            time={5}
+                        />
+                    </div>
+                </>
+            </div>
+             */}
         </div>
 
     )

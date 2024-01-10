@@ -42,7 +42,7 @@ export const Header = () => {
                                 onClick={() => onOpen()}
                                 className='text-sm mx-1 bg-pink-500 p-1 text-white rounded'
                             >
-                                Criar
+                                Create
                             </button>
                             <div className="relative group text-right">
                                 <button className="focus:outline-none">
@@ -56,13 +56,13 @@ export const Header = () => {
                                 </button>
                                 <ul className="absolute right-0 hidden bg-gray-200 text-gray-600 p-2 space-y-2 rounded group-hover:block">
                                     <li className='text-gray-400'>{auth.currentUser.email}</li>
-                                    <li><Link href="/account">conta</Link></li>
-                                    <li><button onClick={() => handleSignOut()}>sair</button></li>
+                                    <li><Link href="/account">account</Link></li>
+                                    <li><button onClick={() => handleSignOut()}>signout</button></li>
                                 </ul>
                             </div>
                         </>
                     ): (
-                        <div className="bg-black text-white p-1 rounded"><Link href="/signin">Entrar</Link></div>
+                        <div className="bg-black text-white p-1 rounded"><Link href="/signin">Enter</Link></div>
                     )}
                 </div>
             </div>

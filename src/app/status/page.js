@@ -6,14 +6,14 @@ export default function StatusPage() {
             <Header />
             <article>
                 <div className="container mx-auto py-5">
-                    <h1 className="text-2xl">Status da plataforma</h1>
-                    <p>Em breve:</p>
-                    <p>Quantidade total de usuários</p>
-                    <p>Quantidade total de estimativas</p>
-                    <p>Quantidade total de estimativas assertivas</p>
-                    <p>Dados do db da firebase e seu status</p>
-                    <p>Dados do servidor web da Vercel e seu status</p>
-                    <p>Lista de contribuidores</p>
+                    <h1 className="text-2xl">Platform status</h1>
+                    <p>Soon:</p>
+                    <p>Total qtt of users</p>
+                    <p>Total qtt of estimatives</p>
+                    <p>Total qtt of assertive estimatives</p>
+                    <p>Db data of firebase</p>
+                    <p>Web server data of Vercel</p>
+                    <p>List of contributors</p>
                 </div>
             </article>
 

@@ -16,14 +16,14 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <section className="mb-16">
             <div className="flex flex-col items-center justify-center">
-              <h1 className="text-2xl font-bold">estimahub <span className="text-sm text-gray-600">1.0.2</span></h1>
-              <p className="w-96 text-center">Uma comunidade focada em compartilhar e estudar experiências com estimativas de software de forma pública</p>
+              <h1 className="text-2xl font-bold">estimahub <span className="text-sm text-gray-600">1.0.4</span></h1>
+              <p className="w-96 text-center">A community focused on sharing and studying experiences with software estimations publicly</p>
             </div>
           </section>
 
           <section>
             <Estimatives limit={9}/>
-            <Button onClick={() => { router.push('/estimatives')}}>Veja mais</Button>
+            <Button onClick={() => { router.push('/estimatives')}}>See more</Button>
           </section>
         </div>
       </main>

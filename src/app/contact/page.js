@@ -6,8 +6,8 @@ export default function ContactPage() {
             <Header />
             <article>
                 <div className="container mx-auto py-5">
-                    <p className="text-2xl mb-2 font-bold">Contato</p>
-                    <p className="mb-4">Caso queira falar sobre alguma dúvida, sugestão, reclamação, problema de segurança ou qualquer outro assunto, pode enviar um email diretamente para:</p>
+                    <p className="text-2xl mb-2 font-bold">Contact</p>
+                    <p className="mb-4">If you want to discuss any questions, suggestions, complaints, security issues, or any other matter, you can send an email directly to:</p>
                     <p>henriques.pessoal@gmail.com</p>
                 </div>
             </article>

@@ -27,10 +27,10 @@ export const CreateEstimativeModal = ({ isOpen, onOpenChange }) => {
         try {
             // Validate form fields
             const newErrors = {};
-            if (!description) newErrors.description = 'Descreva a estimativa';
-            if (!stackString) newErrors.stack = 'Informe as tecnologias';
-            if (!devs) newErrors.devs = 'Informe a quantidade de devs envolvidos';
-            if (!time) newErrors.time = 'Informe quanto tempo levou (em dias)';
+            if (!description) newErrors.description = 'Describe the estimate';
+            if (!stackString) newErrors.stack = 'Write the tech stack';
+            if (!devs) newErrors.devs = 'Report how many devs are involved';
+            if (!time) newErrors.time = 'Report how many days this estimate last';
 
             // If there are errors, set them in the state
             if (Object.keys(newErrors).length > 0) setErrors(newErrors);
@@ -60,26 +60,26 @@ export const CreateEstimativeModal = ({ isOpen, onOpenChange }) => {
                 <ModalContent>
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">Criar estimativa</ModalHeader>
+                            <ModalHeader className="flex flex-col gap-1">Create estimate</ModalHeader>
                             <ModalBody>
                                 <p>
-                                    Preencha sua experiência da forma mais precisa possível. Sua contribuição é muito importante para comunidade :)
+                                    Fill in your experience as accurately as possible. Your contribution is very important to the community
                                 </p>
                                 {errors.description && (<p className='text-red-500'>{errors.description}</p>)}
-                                <textarea className="border-1 p-2 rounded" type="text" placeholder="descrição" onChange={event => setDescription(event.target.value)} />
+                                <textarea className="border-1 p-2 rounded" type="text" placeholder="description" onChange={event => setDescription(event.target.value)} />
                                 {errors.stack && (<p className='text-red-500'>{errors.stack}</p>)}
-                                <input className="border-1 p-2 rounded" type="text" placeholder="tecnologias (dividas por espaço)" onChange={event => setStackString(event.target.value)} />
+                                <input className="border-1 p-2 rounded" type="text" placeholder="technologies (split by comma)" onChange={event => setStackString(event.target.value)} />
                                 {errors.time && (<p className='text-red-500'>{errors.time}</p>)}
-                                <input className="border-1 p-2 rounded" type="number" min={1} placeholder="tempo (em dias)" onChange={event => setTime(event.target.value)} />
+                                <input className="border-1 p-2 rounded" type="number" min={1} placeholder="time (days)" onChange={event => setTime(event.target.value)} />
                                 {errors.devs && (<p className='text-red-500'>{errors.devs}</p>)}
                                 <input className="border-1 p-2 rounded" type="number" min={1} placeholder="devs" onChange={event => setDevs(event.target.value)} />
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="danger" variant="light" onPress={onClose}>
-                                    Cancelar
+                                    Cancel
                                 </Button>
                                 <Button className="bg-pink-600 text-white" onPress={() => handleCreate(onClose)}>
-                                    Criar estimativa
+                                    Create estimate
                                 </Button>
                             </ModalFooter>
                         </>

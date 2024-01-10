@@ -6,13 +6,17 @@ export default function MotivationPage() {
             <Header />
             <article>
                 <div className="container mx-auto py-5">
-                    <p className="text-2xl mb-2 font-bold">Motivação</p>
-                    <p className="mb-4">Sabe aquele momento em que você tá lá, na frente do cliente ou do PO, e ele solta um "quanto tempo vai demorar pra fazer isso"? Aí você pensa: "Vou ter que chutar alguma coisa, depois eu me viro." Brincadeiras à parte, esse é um dos desafios mais presentes da vida de um desenvolvedor, e foi pensando nisso que surgiu a ideia de criar uma plataforma de estudo de estimativas de software.</p>
-                    <p className="mb-4">Vocês já leram "O Mítico Homem-Mês" do Fred Brooks? Esse livro é tipo a bíblia dos desenvolvedores/gestores, e o cara desbrava os desafios de gerenciar projetos de software. A sacada é que ele já alertava lá nos anos 70 sobre como é difícil estimar o tempo necessário para desenvolver um software. Tipo, é uma parada quase filosófico, sabe? E isso não mudou muito desde então...</p>
-                    <p className="mb-4">Então, botei na cabeça que a gente precisava de uma plataforma que não só jogasse números na nossa cara, mas que também desse um contexto maior antes de bater o martelo nas estimativas.</p>
-                    <p className="mb-4">A ideia aqui não é a busca desenfreada pela precisão, porque, sejamos sinceros, isso é tipo procurar um cavalo embaixo dágua. O objetivo é criar um consenso, uma média ponderada, uma galera dando pitaco pra, pelo menos, desenvolver uma base. Afinal, se o Fred Brooks já dizia que "adicionar mais gente a um projeto atrasado o atrasa ainda mais", a gente precisa de um plano B, e a comunidade é esse plano.</p>
-                    <p className="mb-4">A plataforma não visa ser o oráculo da programação, mas sim um lugar onde a galera pode dar pitaco, contar as próprias experiências e, juntos, irmos moldando essa área chamada estimativa de software. Porque, né, somos todos marinheiros no mesmo barco, tentando não se afogar em linhas de código.</p>
-                    <p>Estamos só começando 🚀</p>
+                    <p className="text-2xl mb-2 font-bold">Motivation</p>
+
+                    <p className="mb-4">You know that moment when you're there, in front of the client or the PO, and they drop a "how long will it take to do this"? Then you think, "I'll have to throw something out there, figure it out later." Jokes aside, this is one of the most common challenges in a developer's life, and it was thinking about this that the idea of creating a software estimation study platform emerged.</p>
+
+                    <p className="mb-4">Have you read "The Mythical Man-Month" by Fred Brooks? This book is like the bible for developers/managers, and the guy tackles the challenges of managing software projects. The insight is that back in the 70s, he was already warning about how difficult it is to estimate the time needed to develop software. It's almost philosophical, you know? And that hasn't changed much since then...</p>
+
+                    <p className="mb-4">So, I got it into my head that we needed a platform that not only threw numbers in our faces but also provided a broader context before making estimates. The idea here is not the relentless pursuit of precision because, let's be honest, that's like looking for a needle in a haystack. The goal is to create a consensus, a weighted average, a bunch of people giving input to at least develop a foundation. After all, if Fred Brooks already said that "adding more people to a late project makes it later," we need a Plan B, and the community is that plan.</p>
+
+                    <p className="mb-4">The platform doesn't aim to be the oracle of programming but rather a place where people can give input, share their experiences, and together, shape this area called software estimation. Because, you know, we're all sailors in the same boat, trying not to drown in lines of code.</p>
+
+                    <p>We're just getting started. 🚀</p>
                 </div>
             </article>
 

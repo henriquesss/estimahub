@@ -23,9 +23,9 @@ export const Auth = ({ type }) => {
         try {
             // Validate form fields
             const newErrors = {};
-            if (!email) newErrors.email = 'Preencha o email';
+            if (!email) newErrors.email = 'Fill the email';
 
-            if (!password) newErrors.password = 'Preencha a senha';
+            if (!password) newErrors.password = 'Fill the password';
 
             // If there are errors, set them in the state
             if (Object.keys(newErrors).length > 0) setErrors(newErrors);
@@ -62,7 +62,7 @@ export const Auth = ({ type }) => {
             {errors.password && (<p className='text-red-500'>{errors.password}</p>)}
             <input
                 type="password"
-                placeholder="Senha"
+                placeholder="Password"
                 onChange={event => setPassword(event.target.value)}
             />
 
@@ -70,7 +70,7 @@ export const Auth = ({ type }) => {
                 onClick={() => handleAuth()}
                 className='bg-black text-white p-1 rounded mt-3'
             >
-                {type == 'signin' ? 'Entrar' : 'Criar'}
+                {type == 'signin' ? 'Signin' : 'Create account'}
             </button>
         </div>
     )
