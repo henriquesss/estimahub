@@ -13,7 +13,7 @@ export default function Home() {
           <section className="mb-16">
             <div className="flex flex-col items-center justify-center">
               <h1 className="text-2xl font-bold">
-                estimahub <span className="text-sm text-gray-600">1.0.4</span>
+                estimahub <span className="text-sm text-gray-600">1.0.5</span>
               </h1>
               <p className="w-96 text-center">
                 A community focused on sharing and studying experiences with
