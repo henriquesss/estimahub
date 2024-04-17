@@ -10,13 +10,6 @@ This project is built using Next.js, a React framework for building server-rende
 
 (this documentation have been made with chatGPT)
 
-## Getting Started
-
-- Clone this repository
-- nvm use
-- npm install
-- npm run dev
-
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
