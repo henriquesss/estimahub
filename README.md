@@ -10,21 +10,12 @@ This project is built using Next.js, a React framework for building server-rende
 
 (this documentation have been made with chatGPT)
 
-## Table of Contents (soon)
-
-1. [Getting Started](#getting-started)
-2. [Project Structure](#project-structure)
-3. [Next.js](#nextjs)
-4. [Firebase Services](#firebase-services)
-   - [Firestore](#firestore)
-   - [Authentication](#authentication)
-5. [Development](#development)
-6. [Deployment](#deployment)
-   - [Firebase Hosting](#firebase-hosting)
-7. [Contributing](#contributing)
-8. [License](#license)
-
 ## Getting Started
+
+- Clone this repository
+- nvm use
+- npm install
+- npm run dev
 
 ### Prerequisites
 
