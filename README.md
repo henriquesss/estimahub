@@ -47,7 +47,13 @@ First of all, create and account at Firebase (if you don't have), create a proje
 ```
 
 ### Contributing
-Be free to send PR with the github pattern. 
+If you want to contribute, follow this steps:
+
+- Make a fork of the project
+- Create your feature branch (git checkout -b feature/AmazingFeature)
+- Commit your changes (git commit -m 'Add some AmazingFeature')
+- Push (git push origin feature/AmazingFeature)
+- Open a pull request 
 
 ### License
 This project is licensed under the MIT License.
